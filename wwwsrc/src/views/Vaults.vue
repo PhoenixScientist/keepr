@@ -3,16 +3,17 @@
     <h3>Welcome Home {{user.username}}</h3>
     <button v-if="user.id" @click="logout">logout</button>
     <router-link v-else :to="{name: 'login'}">Login</router-link>
-    <KeepSplat />
+
+    <VaultSplat />
   </div>
 </template>
 
 <script>
-  import KeepSplat from '@/components/KeepSplat.vue'
+  import VaultSplat from '@/components/VaultSplat.vue'
   export default {
-    name: "home",
+    name: "Vaults",
     components: {
-      KeepSplat
+      VaultSplat
     },
     computed: {
       user() {

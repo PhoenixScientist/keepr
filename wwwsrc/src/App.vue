@@ -1,5 +1,9 @@
 <template>
   <div id="app">
+    <div id="nav">
+      <router-link to="/"><i class="fas fa-hands"></i></router-link>
+      <router-link to="/vaults"><i class="fas fa-dungeon"></i></router-link>
+    </div>
     <router-view />
   </div>
 </template>
@@ -24,5 +28,13 @@
 
   #nav a.router-link-exact-active {
     color: #42b983;
+  }
+
+  .card {
+    min-width: 200px;
+    width: 30vw;
+    padding: 1%;
+    background-color: blue;
+    color: cornsilk;
   }
 </style>
